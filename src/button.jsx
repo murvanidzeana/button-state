@@ -5,7 +5,7 @@ export default function Button(){
 
 
     const [count,setcount]= useState(0)
-    const add = () => {
+    const change = () => {
         if("+"){
             setcount (count+1)
 
@@ -22,11 +22,11 @@ export default function Button(){
     // }
 
     return(<>
-        <button onClick={add}>+</button>
+        <button onClick={change}>+</button>
 
         <button > i was Clicked {count} times </button>
 
-        <button onClick={add}>-</button>
+        <button onClick={change}>-</button>
         </>
 
     )
